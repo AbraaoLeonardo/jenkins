@@ -1,9 +1,9 @@
 pipeline{
     agent any
     stages {
-        stage ('started'){
+        stage ('start the app'){
             steps{
-                sh 'echo iniciando'
+                sh 'python3 app.py'
             }
         }
     }
